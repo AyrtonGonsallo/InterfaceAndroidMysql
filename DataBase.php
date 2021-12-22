@@ -61,7 +61,7 @@ class DataBase
         $password = $this->prepareData($password);
         $email = $this->prepareData($email);
         $this->sql =
-            "INSERT INTO " . $table . " (firstname,lastname,DOB,phone, password, email) VALUES ('" . $firstname . "','". $lastname . "','" . $DOB . "','" . $phone . "','". $password . "','" . $email . "')";
+            "INSERT INTO " . $table . " (firstname,lastname,DOB,phone, passwd, email) VALUES ('" . $firstname . "','". $lastname . "','" . $DOB . "','" . $phone . "','". $password . "','" . $email . "')";
         if (mysqli_query($this->connect, $this->sql)) {
             return true;
         } else return false;
