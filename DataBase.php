@@ -66,6 +66,30 @@ class DataBase
             return true;
         } else return false;
     }
+    function getLast4Movies()
+    {
+        $this->sql="SELECT * FROM movies ORDER by mid desc Limit 4";
+        $result = array();
+        $result['data']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['mid']=$row['0'];
+            $index['name']=$row['1'];
+            $index['genre']=$row['2'];
+            $index['imgpath']=$row['9'];
+            $index['videopath']=$row['10'];
+            $index['rdate']=$row['3'];
+            $index['runtime']=$row['4'];
+            $index['description']=$row['5'];
+            $index['keywords_en']=$row['6'];
+            array_push($result['data'],$index);
+
+        }
+        $result["sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
 
 }
 
