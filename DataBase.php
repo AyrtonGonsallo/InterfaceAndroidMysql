@@ -91,6 +91,32 @@ class DataBase
         
     }
 
+    function getLast4Series()
+    {
+        $this->sql="SELECT * FROM series ORDER by sid desc Limit 4";
+        $result = array();
+        $result['data']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['sid']=$row['0'];
+            $index['name']=$row['1'];
+            $index['genre']=$row['2'];
+            $index['imgpath']=$row['10'];
+            $index['episods']=$row['6'];
+            $index['seasons']=$row['5'];
+            $index['rdate']=$row['4'];
+            $index['runtime']=$row['3'];
+            $index['description']=$row['7'];
+            $index['keywords_en']=$row['8'];
+            array_push($result['data'],$index);
+
+        }
+        $result["sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
+
 }
 
 ?>
