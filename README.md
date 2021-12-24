@@ -1,38 +1,38 @@
 <<<<<<< HEAD
 Une api codee par mes soins en php
-#URLS: recherche de films par mots cles http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?keyword=psychopath recherche de films par titre http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?title=joker recherche de films par description http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?description=psychopath recherche de series par mots cles http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?keyword=psychopath recherche de series par titre http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?title=joker recherche de series par description http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?description=just obtention des 4 derniers films http://localhost/InterfaceAndroidMysql/getLast4Movies.php obtention des 4 dernieres series http://localhost/InterfaceAndroidMysql/getLast4Series.php
+#URLS: recherche de films par mots cles https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?keyword=psychopath recherche de films par titre https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?title=joker recherche de films par description https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?description=psychopath recherche de series par mots cles https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?keyword=psychopath recherche de series par titre https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?title=joker recherche de series par description https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?description=just obtention des 4 derniers films https://interface-android-mysql.herokuapp.com/getLast4Movies.php obtention des 4 dernieres series https://interface-android-mysql.herokuapp.com/getLast4Series.php
 
-obtention de tout les films http://localhost/InterfaceAndroidMysql/getAllMovies.php obtention de toutesles series http://localhost/InterfaceAndroidMysql/getAllMovies.php inscritpion d'un utilisateur http://localhost/InterfaceAndroidMysql/signup.php login d'un utilisateur http://localhost/InterfaceAndroidMysql/login.php
+obtention de tout les films https://interface-android-mysql.herokuapp.com/getAllMovies.php obtention de toutesles series https://interface-android-mysql.herokuapp.com/getAllMovies.php inscritpion d'un utilisateur https://interface-android-mysql.herokuapp.com/signup.php login d'un utilisateur https://interface-android-mysql.herokuapp.com/login.php
 
 #A la revoyure GONSALLO AYRTON
 =======
 # Une api codee par mes soins en php 
 #URLS:
 recherche de films par mots cles
-http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?keyword=psychopath
+https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?keyword=psychopath
 recherche de films par titre
-http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?title=joker
+https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?title=joker
 recherche de films par description
-http://localhost/InterfaceAndroidMysql/findMoviesByDescription_Title_Keyword.php?description=psychopath
+https://interface-android-mysql.herokuapp.com/findMoviesByDescription_Title_Keyword.php?description=psychopath
 recherche de series par mots cles
-http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?keyword=psychopath
+https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?keyword=psychopath
 recherche de series par titre
-http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?title=joker
+https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?title=joker
 recherche de series par description
-http://localhost/InterfaceAndroidMysql/findSeriesByDescription_Title_Keyword.php?description=just
+https://interface-android-mysql.herokuapp.com/findSeriesByDescription_Title_Keyword.php?description=just
 obtention des 4 derniers films
-http://localhost/InterfaceAndroidMysql/getLast4Movies.php
+https://interface-android-mysql.herokuapp.com/getLast4Movies.php
 obtention des 4 dernieres series
-http://localhost/InterfaceAndroidMysql/getLast4Series.php
+https://interface-android-mysql.herokuapp.com/getLast4Series.php
 
 obtention de tout les films
-http://localhost/InterfaceAndroidMysql/getAllMovies.php
+https://interface-android-mysql.herokuapp.com/getAllMovies.php
 obtention de toutesles series
-http://localhost/InterfaceAndroidMysql/getAllMovies.php
+https://interface-android-mysql.herokuapp.com/getAllMovies.php
 inscritpion d'un utilisateur
-http://localhost/InterfaceAndroidMysql/signup.php
+https://interface-android-mysql.herokuapp.com/signup.php
 login d'un utilisateur
-http://localhost/InterfaceAndroidMysql/login.php
+https://interface-android-mysql.herokuapp.com/login.php
 
 
 #A la revoyure                                                                                  GONSALLO AYRTON
