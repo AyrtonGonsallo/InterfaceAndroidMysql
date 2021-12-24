@@ -1,9 +1,11 @@
 <?php
 require "DataBase.php";
 $db = new DataBase();
-if (isset($_POST['password']) &&($_POST['email'])) {
+$json = file_get_contents('php://input');
+$data = json_decode($json, true);
+if (($data["email"]!="") &&($data["password"]!="")) {
     if ($db->dbConnect()) {
-        $db->getUser($_POST['email'],$_POST['password']);
+        $db->getUser($data["email"],$data["password"]);
         
         
     } else echo "Error: Database connection";
