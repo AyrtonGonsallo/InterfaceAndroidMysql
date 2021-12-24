@@ -66,6 +66,27 @@ class DataBase
             return true;
         } else return false;
     }
+
+    function addMovieComment($table, $uid,$text, $mid)
+    {
+        $date = date('Y-m-d');
+        $text = $this->prepareData($text);
+        $this->sql =
+            "INSERT INTO " . $table . " (user_id,text,date,mid) VALUES (" . $uid . ",'". $text . "',CURRENT_DATE," . $mid .")";
+        if (mysqli_query($this->connect, $this->sql)) {
+            return true;
+        } else return false;
+    }
+    function addSerieComment($table, $uid,$text, $sid)
+    {
+        $date = date('Y-m-d');
+        $this->sql =
+        "INSERT INTO " . $table . " (user_id,text,date,sid) VALUES (" . $uid . ",'". $text . "',CURRENT_DATE," . $sid .")";
+        if (mysqli_query($this->connect, $this->sql)) {
+            return true;
+        } else return false;
+    }
+
     function getLast4Movies()
     {
         $this->sql="SELECT * FROM movies ORDER by mid desc Limit 4";
