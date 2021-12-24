@@ -7,6 +7,8 @@ if (isset($_POST['password']) &&($_POST['email'])) {
         
         
     } else echo "Error: Database connection";
+}else{
+    echo "parameters email or password missing";
 }
 
 ?>
