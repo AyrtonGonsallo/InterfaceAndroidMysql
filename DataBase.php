@@ -87,6 +87,25 @@ class DataBase
         } else return false;
     }
 
+    function getUser($email,$password)
+    {
+        $this->sql="SELECT * FROM user1 where email like '%".$email."%' and passwd like '%".$password."%'";
+        $result = array();
+        
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['id']=$row['0'];
+            $index['firstname']=$row['1'];
+            $index['lastname']=$row['2'];
+
+        }
+        $result['user']=$index;
+        $result["get user sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
+
     function getLast4Movies()
     {
         $this->sql="SELECT * FROM movies ORDER by mid desc Limit 4";
