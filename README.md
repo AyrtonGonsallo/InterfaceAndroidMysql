@@ -26,8 +26,10 @@ inscritpion d'un utilisateur
 https://interface-android-mysql.herokuapp.com/signup.php
 login d'un utilisateur
 https://interface-android-mysql.herokuapp.com/login.php
-get user
+obtenir les infos d'un user
 https://interface-android-mysql.herokuapp.com/getUser.php
+ajouter un commentaire
+https://interface-android-mysql.herokuapp.com/addComment.php
 
 #A la revoyure                                                                                                                                                  GONSALLO AYRTON
 
