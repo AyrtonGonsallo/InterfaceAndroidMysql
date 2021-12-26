@@ -106,6 +106,48 @@ class DataBase
         
     }
 
+    function getSerieComment($sid)
+    {
+        $this->sql="SELECT * FROM comments where sid =$sid";
+        $result = array();
+        $result['comments']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['cid']=$row['0'];
+            $index['user_id']=$row['1'];
+            $index['text']=$row['2'];
+            $index['date']=$row['3'];
+            $index['sid']=$row['5'];
+            array_push($result['comments'],$index);
+        }
+        
+        $result["get serie comment sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
+
+    function getMovieComment($mid)
+    {
+        $this->sql="SELECT * FROM comments where mid =$mid";
+        $result = array();
+        $result['comments']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['cid']=$row['0'];
+            $index['user_id']=$row['1'];
+            $index['text']=$row['2'];
+            $index['date']=$row['3'];
+            $index['mid']=$row['4'];
+            array_push($result['comments'],$index);
+        }
+        
+        $result["get movie comment sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
+
     function getLast4Movies()
     {
         $this->sql="SELECT * FROM movies ORDER by mid desc Limit 4";
