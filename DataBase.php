@@ -457,7 +457,7 @@ class DataBase
 
     function getEpisods($sid)
     {
-        $this->sql="SELECT * FROM episods where sid =$sid";
+        $this->sql="SELECT * FROM episods where season =$sid";
         $result = array();
         $result['episods']=array();
         $response=mysqli_query($this->connect, $this->sql);
