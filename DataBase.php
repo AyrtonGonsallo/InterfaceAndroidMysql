@@ -433,6 +433,51 @@ class DataBase
             echo "not found";
         }    
     }
+    function getSeasons($sid)
+    {
+        $this->sql="SELECT * FROM seasons where sid =$sid";
+        $result = array();
+        $result['seasons']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['id']=$row['0'];
+            $index['name']=$row['1'];
+            $index['sid']=$row['2'];
+            $index['description']=$row['3'];
+            $index['imgpath']=$row['4'];
+            $index['NEP']=$row['5'];
+            array_push($result['seasons'],$index);
+        }
+        
+        $result["get seasons sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
+
+    function getEpisods($sid)
+    {
+        $this->sql="SELECT * FROM episods where sid =$sid";
+        $result = array();
+        $result['episods']=array();
+        $response=mysqli_query($this->connect, $this->sql);
+        while($row=mysqli_fetch_array($response)){
+            $index['id']=$row['0'];
+            $index['name']=$row['1'];
+            $index['videopath']=$row['2'];
+            $index['runtime']=$row['3'];
+            $index['description']=$row['4'];
+            $index['viewers']=$row['5'];
+            $index['season']=$row['6'];
+            $index['sid']=$row['7'];
+            array_push($result['episods'],$index);
+        }
+        
+        $result["get episods sucess"]="1";
+        echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+       
+        
+    }
 
     function findSerieByKeyword($key)
     {
