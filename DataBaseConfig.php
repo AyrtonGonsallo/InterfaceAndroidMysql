@@ -10,14 +10,14 @@ class DataBaseConfig
     public function __construct()
     {
 
-       /*$this->servername = 'remotemysql.com';
+       $this->servername = 'remotemysql.com';
         $this->username = '7LHzcHuC1k';
         $this->password = 'VmMDKMmHnw';
-        $this->databasename = '7LHzcHuC1k';*/
-         $this->servername = 'localhost';
+        $this->databasename = '7LHzcHuC1k';
+       /*  $this->servername = 'localhost';
         $this->username = 'root';
         $this->password = '';
-        $this->databasename = 'streaming';
+        $this->databasename = 'streaming';*/
 
     }
 }
